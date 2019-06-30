@@ -5,4 +5,5 @@ class product(models.Model):
     name = fields.Char()
     policy_ids = fields.Many2many('g.policy')
     order_id = fields.Many2one('g.order')
-    customer_id = fields.Many2one('res.users')
+    product_lot_ids = fields.Many2many('g.product_lot')
+
