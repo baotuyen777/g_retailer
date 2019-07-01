@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<odoo>
+    <!-- Library App Menu -->
+    <menuitem id="menu_manager"
+              name="quan ly doanh nghiep"/>
+    <!-- Action to open the users list -->
+    <act_window id="action_manager_users"
+                name="quan ly users"
+                res_model="res.users"
+                view_mode="tree,form,kanban"
+    />
+    <!-- Menu item to open the users list -->
+    <menuitem id="menu_manager_users"
+              name="users"
+              parent="menu_manager"
+              action="action_manager_users"/>
+
+    <!-- Action to product the  list -->
+    <act_window id="action_manager_product"
+                name="quan ly product"
+                res_model="product.product"
+                view_mode="tree,form,kanban"
+    />
+    <!-- Menu item to open the product list -->
+    <menuitem id="menu_manager_product"
+              name="product"
+              parent="menu_manager"
+              action="action_manager_product"/>
+    <!-- Action to agency the  list -->
+    <act_window id="action_manager_agency"
+                name="quan ly agency"
+                res_model="g.agency"
+                view_mode="tree,form,kanban"
+    />
+    <!-- Menu item to open the agency list -->
+    <menuitem id="menu_manager_agency"
+              name="agency"
+              parent="menu_manager"
+              action="action_manager_agency"/>
+
+    <!-- Action to order the  list -->
+    <act_window id="action_manager_order"
+                name="quan ly order"
+                res_model="g.order"
+                view_mode="tree,form,kanban"
+    />
+    <!-- Menu item to open the order list -->
+    <menuitem id="menu_manager_order"
+              name="order"
+              parent="menu_manager"
+              action="action_manager_order"/>
+
+    <!-- Action to policy the  list -->
+    <act_window id="action_manager_policy"
+                name="quan ly policy"
+                res_model="g.policy"
+                view_mode="tree,form,kanban"
+    />
+    <!-- Menu item to open the policy list -->
+    <menuitem id="menu_manager_policy"
+              name="policy"
+              parent="menu_manager"
+              action="action_manager_policy"/>
+
+    <!-- Action to product_lot the  list -->
+    <act_window id="action_manager_product_lot"
+                name="quan ly product_lot"
+                res_model="g.product_lot"
+                view_mode="tree,form,kanban"
+    />
+    <!-- Menu item to open the product_lot list -->
+    <menuitem id="menu_manager_product_lot"
+              name="product_lot"
+              parent="menu_manager"
+              action="action_manager_product_lot"/>
+
+     <!-- Action to sale_program the  list -->
+    <act_window id="action_manager_sale_program"
+                name="quan ly sale_program"
+                res_model="g.sale_program"
+                view_mode="tree,form,kanban"
+    />
+    <!-- Menu item to open the sale_program list -->
+    <menuitem id="menu_manager_sale_program"
+              name="sale_program"
+              parent="menu_manager"
+              action="action_manager_sale_program"/>
+
+     <act_window id="action_manager_product_cat"
+                name="quan ly product_cat"
+                res_model="product.product_cat"
+                view_mode="tree,form,kanban"
+    />
+    <!-- Menu item to open the sale_program list -->
+    <menuitem id="menu_manager_product_cat"
+              name="product-cat"
+              parent="menu_manager"
+              action="action_manager_product_cat"/>
+</odoo>

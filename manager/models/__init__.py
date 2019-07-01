@@ -5,3 +5,4 @@ from . import sale_program
 from . import order
 from . import policy
 from . import product
+from . import product_cat

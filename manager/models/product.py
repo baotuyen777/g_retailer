@@ -6,4 +6,6 @@ class product(models.Model):
     policy_ids = fields.Many2many('g.policy')
     order_id = fields.Many2one('g.order')
     product_lot_ids = fields.Many2many('g.product_lot')
+    product_cat_id = fields.Many2one('product.product_cat')
+
 
