@@ -1,0 +1,31 @@
+<?xml version='1.0' ?>
+<odoo>
+    <record id="product_form_view1" model="ir.ui.view">
+        <field name="name">product_form-view1</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product.product_normal_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='standard_price']" position="after">
+
+                <field name="policy_ids"/>
+                <field name="order_id"/>
+                <field name="product_lot_ids"/>
+
+            </xpath>
+        </field>
+    </record>
+    <record id="product_form_view2" model="ir.ui.view">
+        <field name="name">product_form-view2</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product.product_normal_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='categ_id']" position="after">
+
+                <field name="product_cat_id"/>
+
+            </xpath>
+        </field>
+    </record>
+    <act_window id="action_manager_product" name="quan ly product" res_model="product.product" view_mode="tree,form,kanban"/>
+    <menuitem id="menu_retailer_product" name="product" parent="menu_retailer" action="action_manager_product"/>
+</odoo>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<odoo>
+    <!-- Custom js, css-->
+    <template id="retailer_backend" inherit_id="web.assets_backend"
+              name="retailer_backend_assets">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" href="/retailer/static/src/css/custom.css"/>
+        </xpath>
+    </template>
+    <template id="retailer_common" name="retailer_report assets" inherit_id="report.assets_common">
+        <xpath expr="." position="inside">
+            <link href="/retailer/static/src/css/qweb.css" rel="stylesheet"/>
+        </xpath>
+    </template>
+
+    <!-- Main menu -->
+    <menuitem id="menu_retailer" name="Tuyến 2"/>
+
+    <!-- Heading menu-->
+
+    <!-- custom paper format-->
+</odoo>

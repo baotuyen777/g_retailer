@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="view_tree_product_cat" model="ir.ui.view">
+        <field name="name">view_tree_product_cat</field>
+        <field name="model">product.product_cat</field>
+        <field name="arch" type="xml">
+            <tree>
+               <field name="name" />
+                <field name="product_lot_ids"/>
+                <field name="product_ids"/>
+            </tree>
+        </field>
+    </record>
+    <record id="view_form_product_cat" model="ir.ui.view">
+        <field name="name">view_form_product_cat</field>
+        <field name="model">product.product_cat</field>
+        <field name="arch" type="xml">
+            <form >
+                <header name="headerproduct_lot">
+                </header>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="product_lot_ids"/>
+                         <field name="product_ids"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <act_window id="action_manager_product_cat"
+                name="quan ly product_cat"
+                res_model="product.product_cat"
+                view_mode="tree,form,kanban"
+    />
+    <!-- Menu item to open the sale_program list -->
+    <menuitem id="menu_retailer_product_cat"
+              name="product-cat"
+              parent="menu_retailer"
+              action="action_manager_product_cat"/>
+</odoo>

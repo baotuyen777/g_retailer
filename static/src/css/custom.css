@@ -1,0 +1,71 @@
+.body1{   background-color:pink !important;}
+.btn-margin{
+    margin-right: 10px;
+}
+.btn-success{
+    color: #fff !important;
+    background-color: #5cb85c !important;
+    border-color: #4cae4c !important;
+}
+.btn-danger {
+    color: #fff !important;
+    background-color: #d9534f !important;
+    border-color: #d43f3a !important;
+}
+.o_partner_code{
+	font-weight: bold;
+    color: #bd4923;
+}
+fieldset.default {
+    border: 1px solid #c0c0c0 !important;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+fieldset.default legend{
+    border-bottom: 0;
+    margin-bottom: auto;
+     width: auto;
+}
+.o_list_view button.o_icon_button {
+     background-color: buttonface;
+     border: 1px solid #ccc;
+     padding: 5px;
+}
+.o_list_view button.o_icon_button:hover {
+     opacity:0.7
+}
+.label{
+    font-weight:bold
+}
+.icon{
+    border:0;
+    background:transparent
+}
+.icon:hover{
+    background:transparent
+}
+
+.o_form_view footer{
+    padding:10px;
+    display:none;
+}
+.action_left{
+    float:left;
+    width:60%;
+}
+.action_right{
+    float:right;
+    width:35%;
+    text-align:right;
+}
+.clear{clear:both}
+fieldset .o_form_view .o_group {
+     margin: 0;
+}
+.tab-pane button{
+    margin: 10px 10px 10px 0;
+}
+
+
+
+

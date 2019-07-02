@@ -1,0 +1,59 @@
+
+body1{   font-family: "Times New Roman", Times, serif !important;}
+body{
+    font-family: 'Times New Roman', serif !important;
+    font-size:22px;
+    line-height: 2em;
+}
+table{
+    width: 100% ;
+}
+
+h2,h4{
+    font-weight:bold;
+    text-align:center;
+}
+h4{
+    font-size:20px;
+}
+thead th{
+    padding:5px;
+}
+.text-bold{
+    font-weight:bold;
+}
+.text-left{text-align:left !important}
+.text-center{text-align:center !important}
+.onetab{padding-left:10px}
+.twotab{padding-left:20px}
+.fourtab{padding-left:40px}
+.tbl_data{margin-top:20px}
+.logo{height:100px}
+.font3{
+    font-size:18px;
+}
+.vertical-top{
+    vertical-align:top;
+}
+.table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {
+    border: 1px solid black;
+}
+.table-bordered {
+    border: 1px solid black;
+}
+.table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {
+    border: 1px solid black;
+}
+td,th{padding:5px 0}
+.table-bordered td{vertical-align:middle !important}
+.header_custom > table td,.header > table td{
+    vertical-align: middle;
+}
+.report_order span{width:100px; display:inline-block;}
+.page1{
+    margin-top:200px;
+    padding-top:200px;
+}
+.signal td{
+    vertical-align:top;
+}

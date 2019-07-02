@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<odoo>
+    <record id="module_manager_category" model="ir.module.category">
+        <field name="name">Quan Ly Doanh Nghiep</field>
+    </record>
+    <!-- Library employee Group -->
+    <record id="group_employee" model="res.groups">
+        <field name="name">Retailer Employee</field>
+        <field name="category_id" ref="module_manager_category"/>
+        <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+    </record>
+
+    <!-- Library admin Group -->
+    <record id="group_admin" model="res.groups">
+        <field name="name">Retailer Admin</field>
+        <field name="category_id" ref="module_manager_category"/>
+        <field name="implied_ids" eval="[(4, ref('group_employee'))]"/>
+<!--        <field name="users" eval="[(4, ref('base.user_root')),(4, ref('base.user_admin'))]"/>-->
+    </record>
+
+</odoo>

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="view_tree_policy" model="ir.ui.view">
+        <field name="name">view_tree_policy</field>
+        <field name="model">g.policy</field>
+        <field name="arch" type="xml">
+            <tree>
+               <field name="customer_ids" widget="many2many_tags"/>
+               <field name="product_ids" widget="many2many_tags"/>
+                <field name="product_lot_ids" widget="many2many_tags"/>
+            </tree>
+        </field>
+    </record>
+    <record id="view_form_policy" model="ir.ui.view">
+        <field name="name">view_form_policy</field>
+        <field name="model">g.policy</field>
+        <field name="arch" type="xml">
+            <form >
+                <header name="headerpolicy">
+                </header>
+                <sheet>
+                    <group>
+                        <field name="customer_ids" widget="many2many_tags"/>
+                        <field name="product_ids" widget="many2many_tags"/>
+                        <field name="product_lot_ids" widget="many2many_tags"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+     <!-- Action to policy the  list -->
+    <act_window id="action_manager_policy"
+                name="quan ly policy"
+                res_model="g.policy"
+                view_mode="tree,form,kanban"
+    />
+    <!-- Menu item to open the policy list -->
+    <menuitem id="menu_retailer_policy"
+              name="policy"
+              parent="menu_retailer"
+              action="action_manager_policy"/>
+</odoo>

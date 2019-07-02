@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="view_tree_sale_program" model="ir.ui.view">
+        <field name="name">view_tree_sale_program</field>
+        <field name="model">g.sale_program</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="customer_ids" widget="many2many_tags"/>
+            </tree>
+        </field>
+    </record>
+    <record id="view_form_sale_program" model="ir.ui.view">
+        <field name="name">view_form_sale_program</field>
+        <field name="model">g.sale_program</field>
+        <field name="arch" type="xml">
+            <form >
+                <header name="headersale_program">
+
+                </header>
+                <sheet>
+                    <group>
+                        <field name="customer_ids" widget="many2many_tags"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+<!-- Action to sale_program the  list -->
+    <act_window id="action_manager_sale_program"
+                name="quan ly sale_program"
+                res_model="g.sale_program"
+                view_mode="tree,form,kanban"
+    />
+    <!-- Menu item to open the sale_program list -->
+    <menuitem id="menu_retailer_sale_program"
+              name="sale_program"
+              parent="menu_retailer"
+              action="action_manager_sale_program"/>
+
+
+</odoo>
